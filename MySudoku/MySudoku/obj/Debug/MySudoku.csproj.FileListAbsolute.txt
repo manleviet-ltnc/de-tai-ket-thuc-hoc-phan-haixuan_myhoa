@@ -1,0 +1,10 @@
+E:\Github\sudoku\MySudoku\MySudoku\bin\Debug\MySudoku.exe.config
+E:\Github\sudoku\MySudoku\MySudoku\bin\Debug\MySudoku.exe
+E:\Github\sudoku\MySudoku\MySudoku\bin\Debug\MySudoku.pdb
+E:\Github\sudoku\MySudoku\MySudoku\obj\Debug\MySudoku.csprojResolveAssemblyReference.cache
+E:\Github\sudoku\MySudoku\MySudoku\obj\Debug\MySudoku.frmMain.resources
+E:\Github\sudoku\MySudoku\MySudoku\obj\Debug\MySudoku.Properties.Resources.resources
+E:\Github\sudoku\MySudoku\MySudoku\obj\Debug\MySudoku.csproj.GenerateResource.Cache
+E:\Github\sudoku\MySudoku\MySudoku\obj\Debug\MySudoku.csproj.CoreCompileInputs.cache
+E:\Github\sudoku\MySudoku\MySudoku\obj\Debug\MySudoku.exe
+E:\Github\sudoku\MySudoku\MySudoku\obj\Debug\MySudoku.pdb
