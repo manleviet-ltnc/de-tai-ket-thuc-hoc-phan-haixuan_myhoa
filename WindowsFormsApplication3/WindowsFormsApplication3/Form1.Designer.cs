@@ -255,9 +255,9 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.myStatus,
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 441);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 427);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(617, 24);
+            this.statusStrip1.Size = new System.Drawing.Size(584, 24);
             this.statusStrip1.TabIndex = 11;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -303,7 +303,7 @@
             this.myTool.Location = new System.Drawing.Point(0, 24);
             this.myTool.Name = "myTool";
             this.myTool.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.myTool.Size = new System.Drawing.Size(617, 25);
+            this.myTool.Size = new System.Drawing.Size(584, 25);
             this.myTool.TabIndex = 12;
             this.myTool.Text = "toolStrip1";
             // 
@@ -546,7 +546,7 @@
             this.trợGiúpToolStripMenuItem});
             this.myMenu.Location = new System.Drawing.Point(0, 0);
             this.myMenu.Name = "myMenu";
-            this.myMenu.Size = new System.Drawing.Size(617, 24);
+            this.myMenu.Size = new System.Drawing.Size(584, 24);
             this.myMenu.TabIndex = 10;
             this.myMenu.Text = "menuStrip1";
             // 
@@ -742,7 +742,7 @@
             this.myPanel.Controls.Add(this.txt05);
             this.myPanel.Location = new System.Drawing.Point(0, 52);
             this.myPanel.Name = "myPanel";
-            this.myPanel.Size = new System.Drawing.Size(464, 377);
+            this.myPanel.Size = new System.Drawing.Size(460, 370);
             this.myPanel.TabIndex = 9;
             this.myPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.myPanel_Paint);
             // 
@@ -1823,7 +1823,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(617, 465);
+            this.ClientSize = new System.Drawing.Size(584, 451);
             this.Controls.Add(this.btnOpen);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnReplay);
