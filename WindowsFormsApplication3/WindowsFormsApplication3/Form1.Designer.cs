@@ -88,11 +88,6 @@
             this.mnuSolveTo = new System.Windows.Forms.ToolStripMenuItem();
             this.myPanel = new System.Windows.Forms.Panel();
             this.lblwait = new System.Windows.Forms.Label();
-            this.txt58 = new System.Windows.Forms.TextBox();
-            this.txt48 = new System.Windows.Forms.TextBox();
-            this.txt57 = new System.Windows.Forms.TextBox();
-            this.txt47 = new System.Windows.Forms.TextBox();
-            this.txt56 = new System.Windows.Forms.TextBox();
             this.txt45 = new System.Windows.Forms.TextBox();
             this.txt33 = new System.Windows.Forms.TextBox();
             this.txt02 = new System.Windows.Forms.TextBox();
@@ -120,6 +115,8 @@
             this.txt61 = new System.Windows.Forms.TextBox();
             this.txt62 = new System.Windows.Forms.TextBox();
             this.txt32 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.txt38 = new System.Windows.Forms.TextBox();
             this.txt82 = new System.Windows.Forms.TextBox();
             this.txt31 = new System.Windows.Forms.TextBox();
@@ -141,13 +138,16 @@
             this.txt24 = new System.Windows.Forms.TextBox();
             this.txt77 = new System.Windows.Forms.TextBox();
             this.txt11 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.txt36 = new System.Windows.Forms.TextBox();
-            this.txt46 = new System.Windows.Forms.TextBox();
             this.txt14 = new System.Windows.Forms.TextBox();
             this.txt68 = new System.Windows.Forms.TextBox();
             this.txt27 = new System.Windows.Forms.TextBox();
             this.txt78 = new System.Windows.Forms.TextBox();
             this.txt03 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.txt37 = new System.Windows.Forms.TextBox();
             this.txt35 = new System.Windows.Forms.TextBox();
             this.txt17 = new System.Windows.Forms.TextBox();
@@ -168,11 +168,6 @@
             this.txt08 = new System.Windows.Forms.TextBox();
             this.txt15 = new System.Windows.Forms.TextBox();
             this.txt06 = new System.Windows.Forms.TextBox();
-            this.btnStart = new System.Windows.Forms.Button();
-            this.btnPlay = new System.Windows.Forms.Button();
-            this.btnReplay = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnOpen = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             this.myTool.SuspendLayout();
             this.PoppupMenu.SuspendLayout();
@@ -187,6 +182,7 @@
             this.mnuSolvePrevious.ShortcutKeys = System.Windows.Forms.Keys.F11;
             this.mnuSolvePrevious.Size = new System.Drawing.Size(186, 22);
             this.mnuSolvePrevious.Text = "Đáp án trước";
+            this.mnuSolvePrevious.Click += new System.EventHandler(this.mnuSolvePrevious_Click);
             // 
             // toolStripMenuItem2
             // 
@@ -200,6 +196,7 @@
             this.recovery.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.R)));
             this.recovery.Size = new System.Drawing.Size(186, 22);
             this.recovery.Text = "Phục hồi";
+            this.recovery.Click += new System.EventHandler(this.recovery_Click_1);
             // 
             // mnuSatic
             // 
@@ -208,6 +205,7 @@
             this.mnuSatic.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.S)));
             this.mnuSatic.Size = new System.Drawing.Size(186, 22);
             this.mnuSatic.Text = "Thống kê";
+            this.mnuSatic.Click += new System.EventHandler(this.mnuSatic_Click_1);
             // 
             // trợGiúpToolStripMenuItem
             // 
@@ -226,6 +224,7 @@
             this.sudokuToolStripMenuItem1.ShortcutKeys = System.Windows.Forms.Keys.F1;
             this.sudokuToolStripMenuItem1.Size = new System.Drawing.Size(176, 22);
             this.sudokuToolStripMenuItem1.Text = "Sudoku";
+            this.sudokuToolStripMenuItem1.Click += new System.EventHandler(this.sudokuToolStripMenuItem1_Click);
             // 
             // toolStripMenuItem3
             // 
@@ -257,7 +256,7 @@
             this.toolStripStatusLabel1});
             this.statusStrip1.Location = new System.Drawing.Point(0, 427);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(584, 24);
+            this.statusStrip1.Size = new System.Drawing.Size(702, 24);
             this.statusStrip1.TabIndex = 11;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -303,7 +302,7 @@
             this.myTool.Location = new System.Drawing.Point(0, 24);
             this.myTool.Name = "myTool";
             this.myTool.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.myTool.Size = new System.Drawing.Size(584, 25);
+            this.myTool.Size = new System.Drawing.Size(702, 25);
             this.myTool.TabIndex = 12;
             this.myTool.Text = "toolStrip1";
             // 
@@ -314,6 +313,7 @@
             this.toolNew.Name = "toolNew";
             this.toolNew.Size = new System.Drawing.Size(23, 22);
             this.toolNew.Text = "Xóa tất cả để tạo đề mới";
+            this.toolNew.Click += new System.EventHandler(this.toolNew_Click);
             // 
             // toolOpen
             // 
@@ -323,6 +323,7 @@
             this.toolOpen.Name = "toolOpen";
             this.toolOpen.Size = new System.Drawing.Size(23, 22);
             this.toolOpen.Text = "Mở ra từ tập tin";
+            this.toolOpen.Click += new System.EventHandler(this.toolOpen_Click);
             // 
             // toolSave
             // 
@@ -331,6 +332,7 @@
             this.toolSave.Name = "toolSave";
             this.toolSave.Size = new System.Drawing.Size(23, 22);
             this.toolSave.Text = "Lưu ra tập tin";
+            this.toolSave.Click += new System.EventHandler(this.toolSave_Click);
             // 
             // toolStripSeparator4
             // 
@@ -345,6 +347,7 @@
             this.toolSolve.Name = "toolSolve";
             this.toolSolve.Size = new System.Drawing.Size(23, 22);
             this.toolSolve.Text = "Giải và xem đáp án đầu tiên";
+            this.toolSolve.Click += new System.EventHandler(this.toolSolve_Click);
             // 
             // toolSoveTo
             // 
@@ -354,6 +357,7 @@
             this.toolSoveTo.Name = "toolSoveTo";
             this.toolSoveTo.Size = new System.Drawing.Size(23, 22);
             this.toolSoveTo.Text = "Xem đáp án thứ";
+            this.toolSoveTo.Click += new System.EventHandler(this.toolSoveTo_Click);
             // 
             // toolSolvePre
             // 
@@ -363,6 +367,7 @@
             this.toolSolvePre.Name = "toolSolvePre";
             this.toolSolvePre.Size = new System.Drawing.Size(23, 22);
             this.toolSolvePre.Text = "Đáp án trước";
+            this.toolSolvePre.Click += new System.EventHandler(this.toolSolvePre_Click);
             // 
             // toolSolveNext
             // 
@@ -372,6 +377,7 @@
             this.toolSolveNext.Name = "toolSolveNext";
             this.toolSolveNext.Size = new System.Drawing.Size(23, 22);
             this.toolSolveNext.Text = "Đáp án tiếp theo";
+            this.toolSolveNext.Click += new System.EventHandler(this.toolSolveNext_Click);
             // 
             // toolStatic
             // 
@@ -381,6 +387,7 @@
             this.toolStatic.Name = "toolStatic";
             this.toolStatic.Size = new System.Drawing.Size(23, 22);
             this.toolStatic.Text = "Xem thông tin";
+            this.toolStatic.Click += new System.EventHandler(this.toolStatic_Click);
             // 
             // toolStripSeparator5
             // 
@@ -398,6 +405,7 @@
             this.onTop.Name = "onTop";
             this.onTop.Size = new System.Drawing.Size(23, 22);
             this.onTop.Text = "Luôn nổi trên màn hình";
+            this.onTop.Click += new System.EventHandler(this.onTop_Click);
             // 
             // toolInfo
             // 
@@ -407,6 +415,7 @@
             this.toolInfo.Name = "toolInfo";
             this.toolInfo.Size = new System.Drawing.Size(23, 22);
             this.toolInfo.Text = "Thông tin";
+            this.toolInfo.Click += new System.EventHandler(this.toolInfo_Click);
             // 
             // mnuSolveNext
             // 
@@ -415,6 +424,7 @@
             this.mnuSolveNext.ShortcutKeys = System.Windows.Forms.Keys.F12;
             this.mnuSolveNext.Size = new System.Drawing.Size(186, 22);
             this.mnuSolveNext.Text = "Đáp án sau";
+            this.mnuSolveNext.Click += new System.EventHandler(this.mnuSolveNext_Click);
             // 
             // PrintPreView
             // 
@@ -546,7 +556,7 @@
             this.trợGiúpToolStripMenuItem});
             this.myMenu.Location = new System.Drawing.Point(0, 0);
             this.myMenu.Name = "myMenu";
-            this.myMenu.Size = new System.Drawing.Size(584, 24);
+            this.myMenu.Size = new System.Drawing.Size(702, 24);
             this.myMenu.TabIndex = 10;
             this.myMenu.Text = "menuStrip1";
             // 
@@ -572,6 +582,7 @@
             this.mnuNew.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
             this.mnuNew.Size = new System.Drawing.Size(186, 22);
             this.mnuNew.Text = "Tạo mới";
+            this.mnuNew.Click += new System.EventHandler(this.mnuNew_Click_1);
             // 
             // mnuOpen
             // 
@@ -622,6 +633,7 @@
             this.thoátToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
             this.thoátToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.thoátToolStripMenuItem.Text = "Thoát";
+            this.thoátToolStripMenuItem.Click += new System.EventHandler(this.thoátToolStripMenuItem_Click);
             // 
             // sudokuToolStripMenuItem
             // 
@@ -645,6 +657,7 @@
             this.mnuSolve.ShortcutKeys = System.Windows.Forms.Keys.F5;
             this.mnuSolve.Size = new System.Drawing.Size(186, 22);
             this.mnuSolve.Text = "Giải đáp án";
+            this.mnuSolve.Click += new System.EventHandler(this.mnuSolve_Click);
             // 
             // mnuSolveTo
             // 
@@ -653,17 +666,13 @@
             this.mnuSolveTo.ShortcutKeys = System.Windows.Forms.Keys.F6;
             this.mnuSolveTo.Size = new System.Drawing.Size(186, 22);
             this.mnuSolveTo.Text = "Xem đáp án thứ...";
+            this.mnuSolveTo.Click += new System.EventHandler(this.mnuSolveTo_Click);
             // 
             // myPanel
             // 
             this.myPanel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.myPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.myPanel.Controls.Add(this.lblwait);
-            this.myPanel.Controls.Add(this.txt58);
-            this.myPanel.Controls.Add(this.txt48);
-            this.myPanel.Controls.Add(this.txt57);
-            this.myPanel.Controls.Add(this.txt47);
-            this.myPanel.Controls.Add(this.txt56);
             this.myPanel.Controls.Add(this.txt45);
             this.myPanel.Controls.Add(this.txt33);
             this.myPanel.Controls.Add(this.txt02);
@@ -691,6 +700,8 @@
             this.myPanel.Controls.Add(this.txt61);
             this.myPanel.Controls.Add(this.txt62);
             this.myPanel.Controls.Add(this.txt32);
+            this.myPanel.Controls.Add(this.textBox6);
+            this.myPanel.Controls.Add(this.textBox3);
             this.myPanel.Controls.Add(this.txt38);
             this.myPanel.Controls.Add(this.txt82);
             this.myPanel.Controls.Add(this.txt31);
@@ -712,13 +723,16 @@
             this.myPanel.Controls.Add(this.txt24);
             this.myPanel.Controls.Add(this.txt77);
             this.myPanel.Controls.Add(this.txt11);
+            this.myPanel.Controls.Add(this.textBox5);
+            this.myPanel.Controls.Add(this.textBox2);
             this.myPanel.Controls.Add(this.txt36);
-            this.myPanel.Controls.Add(this.txt46);
             this.myPanel.Controls.Add(this.txt14);
             this.myPanel.Controls.Add(this.txt68);
             this.myPanel.Controls.Add(this.txt27);
             this.myPanel.Controls.Add(this.txt78);
             this.myPanel.Controls.Add(this.txt03);
+            this.myPanel.Controls.Add(this.textBox4);
+            this.myPanel.Controls.Add(this.textBox1);
             this.myPanel.Controls.Add(this.txt37);
             this.myPanel.Controls.Add(this.txt35);
             this.myPanel.Controls.Add(this.txt17);
@@ -742,7 +756,7 @@
             this.myPanel.Controls.Add(this.txt05);
             this.myPanel.Location = new System.Drawing.Point(0, 52);
             this.myPanel.Name = "myPanel";
-            this.myPanel.Size = new System.Drawing.Size(460, 370);
+            this.myPanel.Size = new System.Drawing.Size(454, 370);
             this.myPanel.TabIndex = 9;
             this.myPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.myPanel_Paint);
             // 
@@ -752,52 +766,12 @@
             this.lblwait.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lblwait.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblwait.ForeColor = System.Drawing.Color.Red;
-            this.lblwait.Location = new System.Drawing.Point(114, 160);
+            this.lblwait.Location = new System.Drawing.Point(112, -6);
             this.lblwait.Name = "lblwait";
             this.lblwait.Size = new System.Drawing.Size(240, 24);
             this.lblwait.TabIndex = 6;
             this.lblwait.Text = "Đang giải đề - Xin chờ chút";
             this.lblwait.Visible = false;
-            // 
-            // txt58
-            // 
-            this.txt58.Location = new System.Drawing.Point(407, 212);
-            this.txt58.Multiline = true;
-            this.txt58.Name = "txt58";
-            this.txt58.Size = new System.Drawing.Size(41, 31);
-            this.txt58.TabIndex = 7;
-            // 
-            // txt48
-            // 
-            this.txt48.Location = new System.Drawing.Point(407, 175);
-            this.txt48.Multiline = true;
-            this.txt48.Name = "txt48";
-            this.txt48.Size = new System.Drawing.Size(41, 31);
-            this.txt48.TabIndex = 6;
-            // 
-            // txt57
-            // 
-            this.txt57.Location = new System.Drawing.Point(361, 212);
-            this.txt57.Multiline = true;
-            this.txt57.Name = "txt57";
-            this.txt57.Size = new System.Drawing.Size(39, 31);
-            this.txt57.TabIndex = 5;
-            // 
-            // txt47
-            // 
-            this.txt47.Location = new System.Drawing.Point(360, 175);
-            this.txt47.Multiline = true;
-            this.txt47.Name = "txt47";
-            this.txt47.Size = new System.Drawing.Size(40, 31);
-            this.txt47.TabIndex = 4;
-            // 
-            // txt56
-            // 
-            this.txt56.Location = new System.Drawing.Point(313, 212);
-            this.txt56.Multiline = true;
-            this.txt56.Name = "txt56";
-            this.txt56.Size = new System.Drawing.Size(41, 31);
-            this.txt56.TabIndex = 3;
             // 
             // txt45
             // 
@@ -1150,6 +1124,32 @@
             this.txt32.WordWrap = false;
             this.txt32.TextChanged += new System.EventHandler(this.Mau_TextChanged);
             // 
+            // textBox6
+            // 
+            this.textBox6.AllowDrop = true;
+            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.Location = new System.Drawing.Point(407, 211);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(41, 31);
+            this.textBox6.TabIndex = 2;
+            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox6.Visible = false;
+            this.textBox6.WordWrap = false;
+            this.textBox6.TextChanged += new System.EventHandler(this.Mau_TextChanged);
+            // 
+            // textBox3
+            // 
+            this.textBox3.AllowDrop = true;
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(407, 175);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(41, 31);
+            this.textBox3.TabIndex = 2;
+            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox3.Visible = false;
+            this.textBox3.WordWrap = false;
+            this.textBox3.TextChanged += new System.EventHandler(this.Mau_TextChanged);
+            // 
             // txt38
             // 
             this.txt38.AllowDrop = true;
@@ -1423,6 +1423,32 @@
             this.txt11.WordWrap = false;
             this.txt11.TextChanged += new System.EventHandler(this.Mau_TextChanged);
             // 
+            // textBox5
+            // 
+            this.textBox5.AllowDrop = true;
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(313, 211);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(41, 31);
+            this.textBox5.TabIndex = 2;
+            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox5.Visible = false;
+            this.textBox5.WordWrap = false;
+            this.textBox5.TextChanged += new System.EventHandler(this.Mau_TextChanged);
+            // 
+            // textBox2
+            // 
+            this.textBox2.AllowDrop = true;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(313, 175);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(41, 31);
+            this.textBox2.TabIndex = 2;
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox2.Visible = false;
+            this.textBox2.WordWrap = false;
+            this.textBox2.TextChanged += new System.EventHandler(this.Mau_TextChanged);
+            // 
             // txt36
             // 
             this.txt36.AllowDrop = true;
@@ -1435,19 +1461,6 @@
             this.txt36.Visible = false;
             this.txt36.WordWrap = false;
             this.txt36.TextChanged += new System.EventHandler(this.Mau_TextChanged);
-            // 
-            // txt46
-            // 
-            this.txt46.AllowDrop = true;
-            this.txt46.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt46.Location = new System.Drawing.Point(313, 175);
-            this.txt46.Name = "txt46";
-            this.txt46.Size = new System.Drawing.Size(41, 31);
-            this.txt46.TabIndex = 2;
-            this.txt46.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt46.Visible = false;
-            this.txt46.WordWrap = false;
-            this.txt46.TextChanged += new System.EventHandler(this.Mau_TextChanged);
             // 
             // txt14
             // 
@@ -1513,6 +1526,32 @@
             this.txt03.Visible = false;
             this.txt03.WordWrap = false;
             this.txt03.TextChanged += new System.EventHandler(this.Mau_TextChanged);
+            // 
+            // textBox4
+            // 
+            this.textBox4.AllowDrop = true;
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(360, 211);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(41, 31);
+            this.textBox4.TabIndex = 2;
+            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox4.Visible = false;
+            this.textBox4.WordWrap = false;
+            this.textBox4.TextChanged += new System.EventHandler(this.Mau_TextChanged);
+            // 
+            // textBox1
+            // 
+            this.textBox1.AllowDrop = true;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(360, 175);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(41, 31);
+            this.textBox1.TabIndex = 2;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox1.Visible = false;
+            this.textBox1.WordWrap = false;
+            this.textBox1.TextChanged += new System.EventHandler(this.Mau_TextChanged);
             // 
             // txt37
             // 
@@ -1774,66 +1813,16 @@
             this.txt06.WordWrap = false;
             this.txt06.TextChanged += new System.EventHandler(this.Mau_TextChanged);
             // 
-            // btnStart
-            // 
-            this.btnStart.Location = new System.Drawing.Point(507, 62);
-            this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(75, 30);
-            this.btnStart.TabIndex = 13;
-            this.btnStart.Text = "Start";
-            this.btnStart.UseVisualStyleBackColor = true;
-            // 
-            // btnPlay
-            // 
-            this.btnPlay.Location = new System.Drawing.Point(507, 112);
-            this.btnPlay.Name = "btnPlay";
-            this.btnPlay.Size = new System.Drawing.Size(75, 30);
-            this.btnPlay.TabIndex = 14;
-            this.btnPlay.Text = "Play";
-            this.btnPlay.UseVisualStyleBackColor = true;
-            // 
-            // btnReplay
-            // 
-            this.btnReplay.Location = new System.Drawing.Point(507, 166);
-            this.btnReplay.Name = "btnReplay";
-            this.btnReplay.Size = new System.Drawing.Size(75, 31);
-            this.btnReplay.TabIndex = 15;
-            this.btnReplay.Text = "Replay";
-            this.btnReplay.UseVisualStyleBackColor = true;
-            // 
-            // btnSave
-            // 
-            this.btnSave.Location = new System.Drawing.Point(507, 221);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 30);
-            this.btnSave.TabIndex = 16;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            // 
-            // btnOpen
-            // 
-            this.btnOpen.Location = new System.Drawing.Point(507, 278);
-            this.btnOpen.Name = "btnOpen";
-            this.btnOpen.Size = new System.Drawing.Size(75, 30);
-            this.btnOpen.TabIndex = 17;
-            this.btnOpen.Text = "Open";
-            this.btnOpen.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 451);
-            this.Controls.Add(this.btnOpen);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.btnReplay);
-            this.Controls.Add(this.btnPlay);
-            this.Controls.Add(this.btnStart);
+            this.ClientSize = new System.Drawing.Size(702, 451);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.myTool);
             this.Controls.Add(this.myMenu);
             this.Controls.Add(this.myPanel);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -1879,7 +1868,6 @@
         private System.Windows.Forms.ToolStripButton toolStatic;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripButton onTop;
-        private System.Windows.Forms.ToolStripButton toolInfo;
         private System.Windows.Forms.ToolStripMenuItem mnuSolveNext;
         private System.Windows.Forms.PrintPreviewDialog PrintPreView;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
@@ -1960,7 +1948,6 @@
         private System.Windows.Forms.TextBox txt77;
         private System.Windows.Forms.TextBox txt11;
         private System.Windows.Forms.TextBox txt36;
-        private System.Windows.Forms.TextBox txt46;
         private System.Windows.Forms.TextBox txt14;
         private System.Windows.Forms.TextBox txt68;
         private System.Windows.Forms.TextBox txt27;
@@ -1986,16 +1973,13 @@
         private System.Windows.Forms.TextBox txt08;
         private System.Windows.Forms.TextBox txt15;
         private System.Windows.Forms.TextBox txt06;
-        private System.Windows.Forms.TextBox txt58;
-        private System.Windows.Forms.TextBox txt48;
-        private System.Windows.Forms.TextBox txt57;
-        private System.Windows.Forms.TextBox txt47;
-        private System.Windows.Forms.TextBox txt56;
-        private System.Windows.Forms.Button btnStart;
-        private System.Windows.Forms.Button btnPlay;
-        private System.Windows.Forms.Button btnReplay;
-        private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Button btnOpen;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ToolStripButton toolInfo;
     }
 }
 
