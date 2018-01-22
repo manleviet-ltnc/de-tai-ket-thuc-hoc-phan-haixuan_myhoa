@@ -21,6 +21,7 @@ namespace Sudoku
         string fileName;          // File đề và đáp án của các level
         string line;              // Đọc từng dòng trong file đề và đáp án của các level
         bool hasStarted = false;  // Kiểm tra đã chơi game chưa
+        Result result;
 
         public GameBoard()
         {
@@ -137,18 +138,12 @@ namespace Sudoku
                             }
 
                     if (btnBack.Focused)
-                    {
                         txt80.Focus();
-                        return true;
-                    }
 
                     if (btnPlay.Focused || btnOK.Focused)
-                    {
                         txt88.Focus();
-                        return true;
-                    }
+                    return true;
 
-                    break;
                 case Keys.Down:
                     for (int i = 0; i < 9; i++)
                         for (int j = 0; j < 9; j++)
@@ -173,10 +168,7 @@ namespace Sudoku
                         return true;
                     }
 
-                    if (btnBack.Focused)
-                        return true;
-
-                    if (btnPlay.Focused || btnOK.Focused)
+                    if (btnBack.Focused || btnPlay.Focused || btnOK.Focused)
                         return true;
 
                     break;
@@ -227,13 +219,24 @@ namespace Sudoku
 
         private void btnBack_Click(object sender, EventArgs e)
         {
+            timer.Stop();
+            Hide();
+
+            if (hasStarted)
+                ReturnMenu();
+            else
+                ReturnMenu();
+        }
+
+        void ReturnMenu()
+        {
             Close();
-            thread = new Thread(ReturnMenu);
+            thread = new Thread(OpenMenu);
             thread.SetApartmentState(ApartmentState.STA);
             thread.Start();
         }
 
-        private void ReturnMenu()
+        void OpenMenu()
         {
             Application.Run(new NewGame());
         }
@@ -249,6 +252,8 @@ namespace Sudoku
             level++;
             if (level == 1)
             {
+                lblLevel.Show();
+                result = new Result(level, 0);
                 fileName = "level1.txt";
                 LoadLevel(fileName);
             }
@@ -397,6 +402,11 @@ namespace Sudoku
                         textBox[i, j].ReadOnly = true;
                     }
 
+                int minute = int.Parse(lblMinute.Text);
+                int second = int.Parse(lblSecond.Text);
+                result.Level = level;
+                result.Time += (10 - minute) * 60 + (60 - second);
+
                 lblMinute.Text = "10";
                 lblSecond.Text = "00";
                 lblMinute.Hide();
@@ -408,8 +418,9 @@ namespace Sudoku
 
             if (level == 10)
             {
-                Rank r = new Rank();
+                Rank r = new Rank(result);
                 r.ShowDialog();
+                ReturnMenu();
             }
         }
 
@@ -442,27 +453,31 @@ namespace Sudoku
 
             if (minute == 0 && second == 0)
             {
-
+                MessageBox.Show("Bạn đã thua!");
+                Rank r = new Rank();
+                r.ShowDialog();
+                ReturnMenu();
             }
         }
 
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
+            timer.Stop();
+            Hide();
+
             if (hasStarted)
             {
-                if (level != 0)
-                {
-                    timer.Stop();
-                    Hide();
-                }
-
                 DialogResult result = MessageBox.Show("Are you want to exit the game?", "",
                                                           MessageBoxButtons.YesNo,
                                                           MessageBoxIcon.Question);
                 if (result == DialogResult.Yes)
+                {
+                    // Chọn yes thì thoát
                     e.Cancel = false;
+                }
                 else if (result == DialogResult.No)
                 {
+                    // Chọn no thì tiếp tục chơi
                     e.Cancel = true;
                     if (level != 0)
                     {

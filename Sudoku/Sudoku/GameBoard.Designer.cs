@@ -189,6 +189,7 @@
             this.lblLevel.Size = new System.Drawing.Size(70, 24);
             this.lblLevel.TabIndex = 16;
             this.lblLevel.Text = "Level 1";
+            this.lblLevel.Visible = false;
             // 
             // timer
             // 

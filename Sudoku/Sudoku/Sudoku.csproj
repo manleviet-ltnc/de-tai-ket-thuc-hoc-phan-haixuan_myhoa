@@ -68,6 +68,7 @@
     <Compile Include="Rank.Designer.cs">
       <DependentUpon>Rank.cs</DependentUpon>
     </Compile>
+    <Compile Include="Result.cs" />
     <EmbeddedResource Include="GameBoard.resx">
       <DependentUpon>GameBoard.cs</DependentUpon>
     </EmbeddedResource>
