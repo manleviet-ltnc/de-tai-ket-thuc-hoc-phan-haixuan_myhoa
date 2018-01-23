@@ -159,6 +159,12 @@ namespace Sudoku
                         return true;
                     }
 
+                    if (txt84.Focused)
+                    {
+                        btnRankList.Focus();
+                        return true;
+                    }
+
                     if (txt88.Focused)
                     {
                         if (btnOK.Visible == true)
@@ -183,6 +189,12 @@ namespace Sudoku
 
                     if (btnBack.Focused)
                     {
+                        btnRankList.Focus();
+                        return true;
+                    }
+
+                    if (btnRankList.Focused)
+                    {
                         if (btnOK.Visible == false)
                             btnPlay.Focus();
                         else
@@ -204,6 +216,12 @@ namespace Sudoku
                             }
 
                     if (btnPlay.Focused || btnOK.Focused)
+                    {
+                        btnRankList.Focus();
+                        return true;
+                    }
+
+                    if (btnRankList.Focused)
                     {
                         btnBack.Focus();
                         return true;
@@ -318,10 +336,6 @@ namespace Sudoku
 
         void LoadLevel(string fileName)
         {
-            for (int i = 0; i < 9; i++)
-                for (int j = 0; j < 9; j++)
-                    textBox[i, j].ReadOnly = false;
-
             StreamReader sr = new StreamReader(fileName);
             int k = 0;
             string line;
@@ -340,12 +354,12 @@ namespace Sudoku
 
                             // Những ô có số không được nhập thêm
                             if (textBox[i, j].Text != "")
-                            {
                                 textBox[i, j].BackColor = Color.Gainsboro;
-                                textBox[i, j].ReadOnly = true;
-                            }
                             else
+                            {
                                 textBox[i, j].BackColor = Color.White;
+                                textBox[i, j].ReadOnly = false;
+                            }
                         }
 
                         break;
@@ -409,6 +423,7 @@ namespace Sudoku
 
                 lblMinute.Text = "10";
                 lblSecond.Text = "00";
+
                 lblMinute.Hide();
                 lblColon.Hide();
                 lblSecond.Hide();
@@ -486,6 +501,19 @@ namespace Sudoku
                     }
                 }
             }
+        }
+
+        private void btnRankList_Click(object sender, EventArgs e)
+        {
+            Close();
+            thread = new Thread(OpenRank);
+            thread.SetApartmentState(ApartmentState.STA);
+            thread.Start();
+        }
+
+        void OpenRank()
+        {
+            Application.Run(new Rank());
         }
     }
 }

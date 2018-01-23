@@ -63,36 +63,84 @@ namespace Sudoku
             {
                 string[] inputs = line.Split('|');
                 int level = int.Parse(inputs[0]);
-                int time = int.Parse(inputs[1]);
-                resultList.Add(new Result(level, time));
+                string[] time = inputs[1].Split(':');
+                int m = int.Parse(time[0]);
+                int s = int.Parse(time[1]);
+                int t = m * 60 + s;
+                resultList.Add(new Result(level, t));
             }
 
             sr.Close();
+        }
+
+        void LoadScored()
+        {
+            for (int i = 0; i < resultList.Count; i++)
+            {
+                lblLevel[i].Text = "Level " + resultList[i].Level;
+                lblTime[i].Text = resultList[i].Time / 60 + ":" + resultList[i].Time % 60;
+            }
+
+            SortRank();
+            for (int i = 0; i < resultList.Count; i++)
+            {
+                lblLevel[i].Text = "Level " + resultList[i].Level;
+                int m = resultList[i].Time / 60;
+                int s = resultList[i].Time % 60;
+
+                string minute;
+                string second;
+                if (m < 10)
+                    minute = "  " + m;
+                else
+                    minute = m + "";
+
+                if (s < 10)
+                    second = "0" + s;
+                else
+                    second = s + "";
+
+                lblTime[i].Text = minute + ":" + second;
+            }
+        }
+
+        void SortRank()
+        {
+            for (int i = 0; i < resultList.Count - 1; i++)
+            {
+                for (int j = i + 1; j < resultList.Count; j++)
+                {
+                    if (resultList[i].Level == resultList[j].Level)
+                    {
+                        if (resultList[i].Time > resultList[j].Time)
+                        {
+                            int t = resultList[i].Time;
+                            resultList[i].Time = resultList[j].Time;
+                            resultList[j].Time = t;
+                        }
+                    }
+                    else if (resultList[i].Level < resultList[j].Level)
+                    {
+                        int t = resultList[i].Level;
+                        resultList[i].Level = resultList[j].Level;
+                        resultList[j].Level = t;
+                    }
+                }
+            }
         }
 
         private void Rank_Load(object sender, EventArgs e)
         {
             LoadLabel();
             LoadTop();
+            LoadScored();
             if (result != null)
             {
                 resultList.Add(result);
-                if (resultList.Count > 10)
-                    resultList.RemoveAt(10);
 
-                resultList.Sort();
-                for (int i = 0; i < resultList.Count; i++)
-                {
-                    if (i + 1 != resultList.Count)
-                    {
-                        if (resultList[i].Level == resultList[i + 1].Level)
-                        {
-                            int t = resultList[i].Time;
-                            resultList[i].Time = resultList[i + 1].Time;
-                            resultList[i + 1].Time = t;
-                        }
-                    }
-                }
+                SortRank();
+                if(resultList.Count > 10)
+                    resultList.RemoveAt(10);
 
                 StreamWriter sw = null;
                 for (int i = 0; i < 10; i++)

@@ -25,19 +25,7 @@ namespace Sudoku
         public Result(int level, int t)
         {
             Level = level;
-            time = t;
-        }
-
-        public int CompareTo(object obj)
-        {
-            Result r = obj as Result;
-            if (r != null)
-            {
-                if (Level < r.Level) return 1;
-                if (Level > r.Level) return -1;
-                else return 0;
-            }
-            throw new ArgumentException("not a Result");
+            Time = t;
         }
     }
 }

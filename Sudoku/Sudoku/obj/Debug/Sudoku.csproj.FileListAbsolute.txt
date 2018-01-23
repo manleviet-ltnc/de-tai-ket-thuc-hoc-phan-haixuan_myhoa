@@ -10,3 +10,15 @@ E:\Documents\Projects in Visual Studio\de-tai-ket-thuc-hoc-phan-haixuan_myhoa\Su
 E:\Documents\Projects in Visual Studio\de-tai-ket-thuc-hoc-phan-haixuan_myhoa\Sudoku\Sudoku\obj\Debug\Sudoku.pdb
 E:\Documents\Projects in Visual Studio\de-tai-ket-thuc-hoc-phan-haixuan_myhoa\Sudoku\Sudoku\obj\Debug\Sudoku.NewGame.resources
 E:\Documents\Projects in Visual Studio\de-tai-ket-thuc-hoc-phan-haixuan_myhoa\Sudoku\Sudoku\obj\Debug\Sudoku.Rank.resources
+D:\de-tai-ket-thuc-hoc-phan-haixuan_myhoa\Sudoku\Sudoku\bin\Debug\Sudoku.exe.config
+D:\de-tai-ket-thuc-hoc-phan-haixuan_myhoa\Sudoku\Sudoku\bin\Debug\Sudoku.exe
+D:\de-tai-ket-thuc-hoc-phan-haixuan_myhoa\Sudoku\Sudoku\bin\Debug\Sudoku.pdb
+D:\de-tai-ket-thuc-hoc-phan-haixuan_myhoa\Sudoku\Sudoku\obj\Debug\Sudoku.csprojResolveAssemblyReference.cache
+D:\de-tai-ket-thuc-hoc-phan-haixuan_myhoa\Sudoku\Sudoku\obj\Debug\Sudoku.GameBoard.resources
+D:\de-tai-ket-thuc-hoc-phan-haixuan_myhoa\Sudoku\Sudoku\obj\Debug\Sudoku.NewGame.resources
+D:\de-tai-ket-thuc-hoc-phan-haixuan_myhoa\Sudoku\Sudoku\obj\Debug\Sudoku.Properties.Resources.resources
+D:\de-tai-ket-thuc-hoc-phan-haixuan_myhoa\Sudoku\Sudoku\obj\Debug\Sudoku.Rank.resources
+D:\de-tai-ket-thuc-hoc-phan-haixuan_myhoa\Sudoku\Sudoku\obj\Debug\Sudoku.csproj.GenerateResource.Cache
+D:\de-tai-ket-thuc-hoc-phan-haixuan_myhoa\Sudoku\Sudoku\obj\Debug\Sudoku.csproj.CoreCompileInputs.cache
+D:\de-tai-ket-thuc-hoc-phan-haixuan_myhoa\Sudoku\Sudoku\obj\Debug\Sudoku.exe
+D:\de-tai-ket-thuc-hoc-phan-haixuan_myhoa\Sudoku\Sudoku\obj\Debug\Sudoku.pdb

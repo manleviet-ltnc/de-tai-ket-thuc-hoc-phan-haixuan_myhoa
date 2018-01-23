@@ -129,6 +129,7 @@
             this.txt72 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnPlay = new System.Windows.Forms.Button();
+            this.btnRankList = new System.Windows.Forms.Button();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel10.SuspendLayout();
@@ -1554,11 +1555,24 @@
             this.btnPlay.UseVisualStyleBackColor = true;
             this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
             // 
+            // btnRankList
+            // 
+            this.btnRankList.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnRankList.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRankList.Location = new System.Drawing.Point(152, 448);
+            this.btnRankList.Name = "btnRankList";
+            this.btnRankList.Size = new System.Drawing.Size(93, 32);
+            this.btnRankList.TabIndex = 23;
+            this.btnRankList.Text = "Rank list";
+            this.btnRankList.UseVisualStyleBackColor = true;
+            this.btnRankList.Click += new System.EventHandler(this.btnRankList_Click);
+            // 
             // GameBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(396, 480);
+            this.Controls.Add(this.btnRankList);
             this.Controls.Add(this.btnPlay);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.btnBack);
@@ -1697,6 +1711,7 @@
         private System.Windows.Forms.TextBox txt72;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button btnPlay;
+        private System.Windows.Forms.Button btnRankList;
     }
 }
 

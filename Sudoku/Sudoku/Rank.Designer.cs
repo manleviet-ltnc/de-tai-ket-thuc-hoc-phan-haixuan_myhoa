@@ -245,9 +245,8 @@
             this.lblTimeTop9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTimeTop9.Location = new System.Drawing.Point(8, 392);
             this.lblTimeTop9.Name = "lblTimeTop9";
-            this.lblTimeTop9.Size = new System.Drawing.Size(71, 29);
+            this.lblTimeTop9.Size = new System.Drawing.Size(0, 29);
             this.lblTimeTop9.TabIndex = 107;
-            this.lblTimeTop9.Text = "10:00";
             // 
             // lblTimeTop0
             // 
@@ -255,9 +254,8 @@
             this.lblTimeTop0.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTimeTop0.Location = new System.Drawing.Point(8, 13);
             this.lblTimeTop0.Name = "lblTimeTop0";
-            this.lblTimeTop0.Size = new System.Drawing.Size(71, 29);
+            this.lblTimeTop0.Size = new System.Drawing.Size(0, 29);
             this.lblTimeTop0.TabIndex = 98;
-            this.lblTimeTop0.Text = "10:00";
             // 
             // lblTimeTop8
             // 
@@ -265,9 +263,8 @@
             this.lblTimeTop8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTimeTop8.Location = new System.Drawing.Point(8, 349);
             this.lblTimeTop8.Name = "lblTimeTop8";
-            this.lblTimeTop8.Size = new System.Drawing.Size(71, 29);
+            this.lblTimeTop8.Size = new System.Drawing.Size(0, 29);
             this.lblTimeTop8.TabIndex = 105;
-            this.lblTimeTop8.Text = "10:00";
             // 
             // lblTimeTop6
             // 
@@ -275,9 +272,8 @@
             this.lblTimeTop6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTimeTop6.Location = new System.Drawing.Point(8, 265);
             this.lblTimeTop6.Name = "lblTimeTop6";
-            this.lblTimeTop6.Size = new System.Drawing.Size(71, 29);
+            this.lblTimeTop6.Size = new System.Drawing.Size(0, 29);
             this.lblTimeTop6.TabIndex = 104;
-            this.lblTimeTop6.Text = "10:00";
             // 
             // lblTimeTop7
             // 
@@ -285,9 +281,8 @@
             this.lblTimeTop7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTimeTop7.Location = new System.Drawing.Point(8, 307);
             this.lblTimeTop7.Name = "lblTimeTop7";
-            this.lblTimeTop7.Size = new System.Drawing.Size(71, 29);
+            this.lblTimeTop7.Size = new System.Drawing.Size(0, 29);
             this.lblTimeTop7.TabIndex = 103;
-            this.lblTimeTop7.Text = "10:00";
             // 
             // lblTimeTop4
             // 
@@ -295,9 +290,8 @@
             this.lblTimeTop4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTimeTop4.Location = new System.Drawing.Point(8, 181);
             this.lblTimeTop4.Name = "lblTimeTop4";
-            this.lblTimeTop4.Size = new System.Drawing.Size(71, 29);
+            this.lblTimeTop4.Size = new System.Drawing.Size(0, 29);
             this.lblTimeTop4.TabIndex = 102;
-            this.lblTimeTop4.Text = "10:00";
             // 
             // lblTimeTop5
             // 
@@ -305,9 +299,8 @@
             this.lblTimeTop5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTimeTop5.Location = new System.Drawing.Point(8, 223);
             this.lblTimeTop5.Name = "lblTimeTop5";
-            this.lblTimeTop5.Size = new System.Drawing.Size(71, 29);
+            this.lblTimeTop5.Size = new System.Drawing.Size(0, 29);
             this.lblTimeTop5.TabIndex = 101;
-            this.lblTimeTop5.Text = "10:00";
             // 
             // lblTimeTop2
             // 
@@ -315,9 +308,8 @@
             this.lblTimeTop2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTimeTop2.Location = new System.Drawing.Point(8, 97);
             this.lblTimeTop2.Name = "lblTimeTop2";
-            this.lblTimeTop2.Size = new System.Drawing.Size(71, 29);
+            this.lblTimeTop2.Size = new System.Drawing.Size(0, 29);
             this.lblTimeTop2.TabIndex = 100;
-            this.lblTimeTop2.Text = "10:00";
             // 
             // lblTimeTop3
             // 
@@ -325,9 +317,8 @@
             this.lblTimeTop3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTimeTop3.Location = new System.Drawing.Point(8, 139);
             this.lblTimeTop3.Name = "lblTimeTop3";
-            this.lblTimeTop3.Size = new System.Drawing.Size(71, 29);
+            this.lblTimeTop3.Size = new System.Drawing.Size(0, 29);
             this.lblTimeTop3.TabIndex = 99;
-            this.lblTimeTop3.Text = "10:00";
             // 
             // lblTimeTop1
             // 
@@ -335,9 +326,8 @@
             this.lblTimeTop1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTimeTop1.Location = new System.Drawing.Point(8, 55);
             this.lblTimeTop1.Name = "lblTimeTop1";
-            this.lblTimeTop1.Size = new System.Drawing.Size(71, 29);
+            this.lblTimeTop1.Size = new System.Drawing.Size(0, 29);
             this.lblTimeTop1.TabIndex = 97;
-            this.lblTimeTop1.Text = "10:00";
             // 
             // panel4
             // 
@@ -363,9 +353,8 @@
             this.lblLevelTop9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLevelTop9.Location = new System.Drawing.Point(4, 392);
             this.lblLevelTop9.Name = "lblLevelTop9";
-            this.lblLevelTop9.Size = new System.Drawing.Size(103, 29);
+            this.lblLevelTop9.Size = new System.Drawing.Size(0, 29);
             this.lblLevelTop9.TabIndex = 106;
-            this.lblLevelTop9.Text = "Level 10";
             // 
             // lblLevelTop0
             // 
@@ -373,9 +362,8 @@
             this.lblLevelTop0.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLevelTop0.Location = new System.Drawing.Point(4, 13);
             this.lblLevelTop0.Name = "lblLevelTop0";
-            this.lblLevelTop0.Size = new System.Drawing.Size(103, 29);
+            this.lblLevelTop0.Size = new System.Drawing.Size(0, 29);
             this.lblLevelTop0.TabIndex = 98;
-            this.lblLevelTop0.Text = "Level 10";
             // 
             // lblLevelTop8
             // 
@@ -383,9 +371,8 @@
             this.lblLevelTop8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLevelTop8.Location = new System.Drawing.Point(4, 349);
             this.lblLevelTop8.Name = "lblLevelTop8";
-            this.lblLevelTop8.Size = new System.Drawing.Size(103, 29);
+            this.lblLevelTop8.Size = new System.Drawing.Size(0, 29);
             this.lblLevelTop8.TabIndex = 105;
-            this.lblLevelTop8.Text = "Level 10";
             // 
             // lblLevelTop6
             // 
@@ -393,9 +380,8 @@
             this.lblLevelTop6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLevelTop6.Location = new System.Drawing.Point(4, 265);
             this.lblLevelTop6.Name = "lblLevelTop6";
-            this.lblLevelTop6.Size = new System.Drawing.Size(103, 29);
+            this.lblLevelTop6.Size = new System.Drawing.Size(0, 29);
             this.lblLevelTop6.TabIndex = 104;
-            this.lblLevelTop6.Text = "Level 10";
             // 
             // lblLevelTop7
             // 
@@ -403,9 +389,8 @@
             this.lblLevelTop7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLevelTop7.Location = new System.Drawing.Point(4, 307);
             this.lblLevelTop7.Name = "lblLevelTop7";
-            this.lblLevelTop7.Size = new System.Drawing.Size(103, 29);
+            this.lblLevelTop7.Size = new System.Drawing.Size(0, 29);
             this.lblLevelTop7.TabIndex = 103;
-            this.lblLevelTop7.Text = "Level 10";
             // 
             // lblLevelTop4
             // 
@@ -413,9 +398,8 @@
             this.lblLevelTop4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLevelTop4.Location = new System.Drawing.Point(4, 181);
             this.lblLevelTop4.Name = "lblLevelTop4";
-            this.lblLevelTop4.Size = new System.Drawing.Size(103, 29);
+            this.lblLevelTop4.Size = new System.Drawing.Size(0, 29);
             this.lblLevelTop4.TabIndex = 102;
-            this.lblLevelTop4.Text = "Level 10";
             // 
             // lblLevelTop5
             // 
@@ -423,9 +407,8 @@
             this.lblLevelTop5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLevelTop5.Location = new System.Drawing.Point(4, 223);
             this.lblLevelTop5.Name = "lblLevelTop5";
-            this.lblLevelTop5.Size = new System.Drawing.Size(103, 29);
+            this.lblLevelTop5.Size = new System.Drawing.Size(0, 29);
             this.lblLevelTop5.TabIndex = 101;
-            this.lblLevelTop5.Text = "Level 10";
             // 
             // lblLevelTop2
             // 
@@ -433,9 +416,8 @@
             this.lblLevelTop2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLevelTop2.Location = new System.Drawing.Point(4, 97);
             this.lblLevelTop2.Name = "lblLevelTop2";
-            this.lblLevelTop2.Size = new System.Drawing.Size(103, 29);
+            this.lblLevelTop2.Size = new System.Drawing.Size(0, 29);
             this.lblLevelTop2.TabIndex = 100;
-            this.lblLevelTop2.Text = "Level 10";
             // 
             // lblLevelTop3
             // 
@@ -443,9 +425,8 @@
             this.lblLevelTop3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLevelTop3.Location = new System.Drawing.Point(4, 139);
             this.lblLevelTop3.Name = "lblLevelTop3";
-            this.lblLevelTop3.Size = new System.Drawing.Size(103, 29);
+            this.lblLevelTop3.Size = new System.Drawing.Size(0, 29);
             this.lblLevelTop3.TabIndex = 99;
-            this.lblLevelTop3.Text = "Level 10";
             // 
             // lblLevelTop1
             // 
@@ -453,9 +434,8 @@
             this.lblLevelTop1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLevelTop1.Location = new System.Drawing.Point(4, 55);
             this.lblLevelTop1.Name = "lblLevelTop1";
-            this.lblLevelTop1.Size = new System.Drawing.Size(103, 29);
+            this.lblLevelTop1.Size = new System.Drawing.Size(0, 29);
             this.lblLevelTop1.TabIndex = 97;
-            this.lblLevelTop1.Text = "Level 10";
             // 
             // Rank
             // 
