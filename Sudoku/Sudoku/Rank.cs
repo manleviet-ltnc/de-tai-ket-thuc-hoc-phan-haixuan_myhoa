@@ -124,6 +124,10 @@ namespace Sudoku
                         int t = resultList[i].Level;
                         resultList[i].Level = resultList[j].Level;
                         resultList[j].Level = t;
+
+                        int temp = resultList[i].Time;
+                        resultList[i].Time = resultList[j].Time;
+                        resultList[j].Time = temp;
                     }
                 }
             }
